@@ -10,4 +10,11 @@ public interface StudentService {
 
     List<StudentModel> findAllStudents();
 
+    StudentModel saveStudent(StudentModel studentModel);
+
+    StudentModel findByEmail(String email);
+
+    StudentModel updateStudent(StudentModel studentModel);
+
+    void deleteStudent(String email);
 }
